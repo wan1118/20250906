@@ -20,7 +20,7 @@
   /* 字體 ------------------------------------------------------------------------------------------*/
   /* 計算公式: 目標px / 基礎16px */
   /* 48px  banner */
-  --font-size-h0: 3rem;
+  --font-size-h0:    3rem;
   /* 43px */
   --font-size-h1: 2.6875rem;
   /* 35px */
@@ -368,10 +368,10 @@ body {
 
 /* 平板 */
 @media (max-width: 992px) {
-.row-area-gap {
-  gap: var(--c-gap-62);
-}
-  
+  .row-area-gap {
+    gap: var(--c-gap-62);
+  }
+
   .cardlist-gap {
     gap: var(--c-gap-32);
   }
