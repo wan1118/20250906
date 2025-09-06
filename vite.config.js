@@ -19,5 +19,5 @@ export default defineConfig({
   },
   server: {
     open: true, // ✅ 這一行會自動開啟瀏覽器
-  },
+  }
 })
