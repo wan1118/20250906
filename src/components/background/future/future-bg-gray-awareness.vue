@@ -1,0 +1,11 @@
+<template>
+    <svg class="c-bg-svg" width="1920" height="250" viewBox="0 0 1920 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1920 250H0V243.729C552.451 -230.455 1587.03 509.097 1920 0V250Z" fill="currentColor" />
+    </svg>
+</template>
+
+<script>
+export default {
+    name: "Background"
+}
+</script>
