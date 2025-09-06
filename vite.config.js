@@ -6,6 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/20250906/',   // ← 你的 repo 名稱
+  build: { outDir: 'docs' },
   plugins: [
     vue(),
     vueDevTools(),
@@ -15,7 +17,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-    server: {
+  server: {
     open: true, // ✅ 這一行會自動開啟瀏覽器
   },
 })
