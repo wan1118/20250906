@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add docs -f && git commit -m \"deploy to docs\" && git push"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
@@ -20,13 +21,5 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^7.0.6",
     "vite-plugin-vue-devtools": "^8.0.0"
-  },
-  {
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview",
-      "deploy": "npm run build && git add docs -f && git commit -m \"deploy to docs\" && git push"
-    }
   }
 }
