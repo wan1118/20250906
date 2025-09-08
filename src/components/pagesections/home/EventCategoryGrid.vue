@@ -15,7 +15,7 @@ const eventCategories = shallowRef([
   { name: "競賽與體育", iconComponent: IconCompetition },
   { name: "學習與成長", iconComponent: IconLearning },
   { name: "宣導與展覽", iconComponent: IconExhibition },
-  { name: "公益與志工服務", iconComponent: IconCharity },
+  { name: "公益與志工", iconComponent: IconCharity },
 ]);
 
 // 3. 將路由功能和導航方法移至此處
@@ -32,8 +32,8 @@ const goToInformation = (categoryName) => {
       <div class="cata-icon-wrapper">
         <component :is="category.iconComponent" />
       </div>
-      <div v-if="category.name === '公益與志工服務'" class="fw-bold">
-        公益與志工<br class="br-tablet">服務
+      <div v-if="category.name === '公益與志工'" class="fw-bold">
+        公益與志工<br class="br-tablet">
       </div>
       <div v-else class="fw-bold">
         {{ category.name }}
@@ -101,7 +101,7 @@ const goToInformation = (categoryName) => {
 }
 
 
-/* 專門控制「公益與志工服務」換行的樣式 */
+/* 專門控制「公益與志工」換行的樣式 */
 
 /* 預設狀態 (大尺寸) 和 小尺寸 (<= 576px)：隱藏這個換行符 */
 .br-tablet {

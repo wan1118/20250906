@@ -69,7 +69,7 @@ const getDefaultImage = (category) => {
         return new URL('../assets/img/event/default-cover/learning_and_development.png', import.meta.url).href;
       case '宣導與展覽':
         return new URL('../assets/img/event/default-cover/promotion_and_exhibition.png', import.meta.url).href;
-      case '公益與志工服務':
+      case '公益與志工':
         return new URL('../assets/img/event/default-cover/public_welfare_and_volunteer_service.png', import.meta.url).href;
       default:
         return `https://placehold.co/800x1000/cccccc/FFFFFF?text=無圖片`;
@@ -409,7 +409,6 @@ const handleRegistrationClick = () => {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 30px;
 }
 
 .link-tag {

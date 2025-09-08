@@ -32,7 +32,7 @@ const activeCategory = ref('全部類型');
 const activeTags = ref([]);
 const allActivities = ref([]);
 const categoryButtons = ref([
-  '全部類型', '休閒娛樂', '競賽與體育', '學習與成長', '宣導與展覽', '公益與志工服務'
+  '全部類型', '休閒娛樂', '競賽與體育', '學習與成長', '宣導與展覽', '公益與志工'
 ]);
 
 const tagButtons = ref(['青少年', '全年齡', '開放報名', '報名截止']);
@@ -78,7 +78,7 @@ const getDefaultImage = (category) => {
       case '競賽與體育': return new URL('@/assets/img/event/default-cover/sports_and_competitions.png', import.meta.url).href;
       case '學習與成長': return new URL('@/assets/img/event/default-cover/learning_and_development.png', import.meta.url).href;
       case '宣導與展覽': return new URL('@/assets/img/event/default-cover/promotion_and_exhibition.png', import.meta.url).href;
-      case '公益與志工服務': return new URL('@/assets/img/event/default-cover/public_welfare_and_volunteer_service.png', import.meta.url).href;
+      case '公益與志工': return new URL('@/assets/img/event/default-cover/public_welfare_and_volunteer_service.png', import.meta.url).href;
       default: return `https://placehold.co/447x333/cccccc/FFFFFF?text=無圖片`;
     }
   } catch (error) {
