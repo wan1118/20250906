@@ -78,9 +78,6 @@ import careImg from '@/assets/img/about/AboutCare.png';
           <div class="text-h2 rwd-text-center h1-title-pb ">宗旨</div>
           <div class="text-p c-flex-col">
             <span>少年英雄聯盟致力於：</span>
-            <!-- <div>1. 激發青少年「陽光、活力、健康」的潛能。</div>
-            <div>2. 提供學習、家庭、情感、人際困擾的實用協助。</div>
-            <div>3. 創造交流平台，幫助你找到歸屬感與成長動力。</div> -->
             <div class="info-list w-auto">
               <ContactInfoItem :icon-component="IconNum1" label="" value="激發青少年「陽光、活力、健康」的潛能。" />
               <ContactInfoItem :icon-component="IconNum2" label="" value="提供學習、家庭、情感、人際困擾的實用協助。" />

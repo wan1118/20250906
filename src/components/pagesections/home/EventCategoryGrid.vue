@@ -32,10 +32,7 @@ const goToInformation = (categoryName) => {
       <div class="cata-icon-wrapper">
         <component :is="category.iconComponent" />
       </div>
-      <div v-if="category.name === '公益與志工'" class="fw-bold">
-        公益與志工<br class="br-tablet">
-      </div>
-      <div v-else class="fw-bold">
+      <div class="fw-bold">
         {{ category.name }}
       </div>
     </div>
@@ -101,20 +98,6 @@ const goToInformation = (categoryName) => {
 }
 
 
-/* 專門控制「公益與志工」換行的樣式 */
-
-/* 預設狀態 (大尺寸) 和 小尺寸 (<= 576px)：隱藏這個換行符 */
-.br-tablet {
-  display: none;
-}
-
-/* 中尺寸 (介於 577px 和 992px 之間)：顯示這個換行符 */
-@media (min-width: 666px) and (max-width: 992px) {
-  .br-tablet {
-    display: initial; /* 恢復 <br> 標籤的預設行為 */
-  }
-}
-
 /* 【新增】響應式斷點：平板 */
 @media (max-width: 1400px) {
   .cata {
@@ -173,12 +156,6 @@ const goToInformation = (categoryName) => {
 
   .cata {
     width: calc((100% - var(--container-padding) * 2 - var(--c-gap-20) / 3) / 3);
-  }
-}
-
-@media (max-width: 521px) {
-    .br-tablet {
-    display: initial; /* 恢復 <br> 標籤的預設行為 */
   }
 }
 
