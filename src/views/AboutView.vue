@@ -130,9 +130,22 @@ import careImg from '@/assets/img/about/AboutCare.png';
 
 <style scoped>
 
-.content-block_image,
 .content-block_text {
-  flex: 1;
+  max-width: 544px;
+    min-width: 28rem;
+
+}
+
+.mean {
+  min-width: 32rem;
+}
+
+.content-block_image {
+    min-width: 300px;
+}
+
+img {
+  width: 100%;
 }
 
 .rwd-text-center {
@@ -193,6 +206,24 @@ h3.mb-5 {
 /* RWD位子 */
 
 @media (max-width: 950px) {
+.content-block_text {
+  max-width: unset;
+    min-width: unset;
+}
+
+.mean {
+  min-width: unset;
+}
+
+.content-block_image {
+    max-width: 300px;
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
   .mean .c-flex-col {
     align-items: center;
   }

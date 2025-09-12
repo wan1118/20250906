@@ -70,7 +70,7 @@ onUnmounted(() => {
     <Banner :sources="pointBannerSources" :default-src="pointDefaultBannerSrc" :bigText="dynamicBigText"
       smallText="Badge & Points" />
     <!-- 勳章介紹驅 -->
-    <div class="c-flex-area  container-padding">
+    <div class="c-flex-area container-padding">
       <!-- 聯盟標章：參與累積的印記 -->
       <div class="c-content-1200 c-flex-area section-gap-half">
         <div class="c-flex-row-ap-area row-area-gap">
